@@ -1,40 +1,32 @@
-# Driver Drowsiness & Distraction Detection (YOLOv11)
+## Driver Drowsiness and Distraction Detection (YOLOv11)
+This is a real-time driver monitoring system designed to detect drowsiness, distraction, and other unsafe behaviors to enhance road safety. Built using YOLOv11, OpenCV, and Pygame, the system processes live webcam input and triggers instant audio alerts upon detecting risky driver behavior.
 
-This real-time AI system monitors drivers for signs of drowsiness, distraction, and unsafe behavior, enhancing road safety. Built with **YOLOv11**, **OpenCV**, and **Pygame**, it detects dangerous behaviors such as mobile phone usage, talking, head movement (left/right), and drowsiness, and triggers an audio alert when any of these are detected.
+## Features
+Real-Time Monitoring: Continuously captures and analyzes video from the webcam.
 
-## 🔍 Features
+Behavior Detection: Identifies critical driver behaviors, including:
 
-- **Real-time Detection:** Continuously processes webcam input.
-- **Detects:**
-  - Drowsiness
-  - Mobile phone usage
-  - Talking
-  - Head movement (left/right)
-  - Presence of a child
-- **Audio Alerts:** Triggers an audio alarm via `pygame` when distraction is detected.
-- **Custom YOLOv11 Model:** Trained on specific driver behavior data.
-- **Works with Webcam:** Runs on any device with a webcam.
+Drowsiness
 
-## 🧠 Tech Stack
+Mobile phone usage
 
-- [YOLOv11](https://github.com/ultralytics/ultralytics) (Ultralytics for object detection)
-- [OpenCV](https://opencv.org/) (Video frame processing)
-- [Pygame](https://www.pygame.org/) (Audio alert handling)
-- Python 3.8+
+Talking
 
-## 📁 Dataset
+Head movements (left or right)
 
-The dataset used for training includes several classes:
+Presence of a child in the vehicle
 
-- **drowsy**
-- **mobile**
-- **talking**
-- **child**
-- **LeftRight**
-- **person** (ensures that a driver is present)
+Instant Audio Alerts: Uses pygame to trigger alarms within 0.5 seconds of detection.
 
+Custom YOLOv11 Model: Trained on a tailored dataset of driver behaviors for accurate classification.
 
+Cross-Platform Compatibility: Works on any device with a webcam and Python environment.
 
+## Tech Stack
+YOLOv11 – Deep learning model for object detection (Ultralytics framework)
 
-   
-   
+OpenCV – Real-time video and frame processing
+
+Pygame – Audio alert generation
+
+Python 3.8+
